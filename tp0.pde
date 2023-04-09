@@ -9,10 +9,6 @@ void setup() {
   void draw() {
   background( 107, 183, 20 );
   image( mono, 400, 0 );
-  println(mouseX);
-  println("X:");
-  println(mouseY);
-  println("Y:");
   fill( 174, 145, 108);
   ellipse( 176, 179, 300, 350);
   fill( 211, 192, 165);
