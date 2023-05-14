@@ -1,14 +1,15 @@
-//
+// Imagenes y fuente
 PImage gibon1;
 PImage gibon2;
 PImage gibon3;
 PImage boton;
-// TEXTOS
+PFont fuente;
+// Textos
 String texto1 = "Los gibones son primates hominoideos. \n Pertenecen a la familia \n de hilobátidos.";
-String texto2 = "Los llamados de los gibones son intensos, \n pueden escucharse a kilómetros de distancia.";
+String texto2 = "Los llamados de los gibones son intensos, \n pueden escucharse a kilómetros \n de distancia.";
 String texto3 = "Se diferencian de los otros hominoideos \n principalmente por su menor tamaño.";
 float opacidad;
-//
+// Codigo
 int pantalla = 1;
 int numero = 0;
 int pos, tama;
@@ -23,7 +24,8 @@ void setup() {
   gibon1 = loadImage("gibon1.jpg");
   gibon2 = loadImage("gibon2.jpg");
   gibon3 = loadImage("gibon3.jpg");
-
+  fuente = loadFont("ComicSansMS-Bold-25.vlw");
+  textFont(fuente);
 }
 
 void draw() {
